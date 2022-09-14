@@ -1,0 +1,140 @@
+.hero {
+  padding-top: 207px;
+  padding-bottom: 147px;
+  background-size: cover;
+  background: linear-gradient(
+      26.36deg,
+      rgba(255, 255, 255, 0.5) 0.22%,
+      rgba(255, 255, 255, 0.495676) 3.13%,
+      rgba(255, 255, 255, 0.482245) 6.04%,
+      rgba(255, 255, 255, 0.45917) 8.94%,
+      rgba(255, 255, 255, 0.426294) 11.85%,
+      rgba(255, 255, 255, 0.384113) 14.76%,
+      rgba(255, 255, 255, 0.334058) 17.67%,
+      rgba(255, 255, 255, 0.278654) 20.57%,
+      rgba(255, 255, 255, 0.221346) 23.48%,
+      rgba(255, 255, 255, 0.165942) 26.39%,
+      rgba(255, 255, 255, 0.115887) 29.3%,
+      rgba(255, 255, 255, 0.0737057) 32.2%,
+      rgba(255, 255, 255, 0.0408299) 35.11%,
+      rgba(255, 255, 255, 0.017755) 38.02%,
+      rgba(255, 255, 255, 0.0043236) 40.93%,
+      rgba(255, 255, 255, 0) 43.83%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.991353) 10.16%,
+      rgba(255, 255, 255, 0.96449) 20.32%,
+      rgba(255, 255, 255, 0.91834) 30.48%,
+      rgba(255, 255, 255, 0.852589) 40.63%,
+      rgba(255, 255, 255, 0.768225) 50.79%,
+      rgba(255, 255, 255, 0.668116) 60.95%,
+      rgba(255, 255, 255, 0.557309) 71.11%,
+      rgba(255, 255, 255, 0.442691) 81.27%,
+      rgba(255, 255, 255, 0.331884) 91.43%,
+      rgba(255, 255, 255, 0.231775) 101.58%,
+      rgba(255, 255, 255, 0.147411) 111.74%,
+      rgba(255, 255, 255, 0.0816599) 121.9%,
+      rgba(255, 255, 255, 0.03551) 132.06%,
+      rgba(255, 255, 255, 0.0086472) 142.22%,
+      rgba(255, 255, 255, 0) 152.37%
+    ),
+    linear-gradient(
+      338.41deg,
+      #3e71ff -21.62%,
+      rgba(62, 113, 255, 0.991353) -17.18%,
+      rgba(62, 113, 255, 0.96449) -12.75%,
+      rgba(62, 113, 255, 0.91834) -8.32%,
+      rgba(62, 113, 255, 0.852589) -3.88%,
+      rgba(62, 113, 255, 0.768225) 0.55%,
+      rgba(62, 113, 255, 0.668116) 4.99%,
+      rgba(62, 113, 255, 0.557309) 9.42%,
+      rgba(62, 113, 255, 0.442691) 13.86%,
+      rgba(62, 113, 255, 0.331884) 18.29%,
+      rgba(62, 113, 255, 0.231775) 22.73%,
+      rgba(62, 113, 255, 0.147411) 27.16%,
+      rgba(62, 113, 255, 0.0816599) 31.6%,
+      rgba(62, 113, 255, 0.03551) 36.03%,
+      rgba(62, 113, 255, 0.0086472) 40.46%,
+      rgba(62, 113, 255, 0) 44.9%
+    ),
+    linear-gradient(
+      73.14deg,
+      #0030b6 -8.88%,
+      #0231b4 -4.54%,
+      #0932b1 -0.21%,
+      #1534ab 4.13%,
+      #2637a3 8.46%,
+      #3b3c98 12.8%,
+      #55408b 17.13%,
+      #71467d 21.47%,
+      #8e4c6e 25.8%,
+      #aa5160 30.14%,
+      #c45653 34.47%,
+      #d95a48 38.81%,
+      #ea5d40 43.14%,
+      #f6603a 47.48%,
+      #fd6137 51.81%,
+      #ff6136 56.15%
+    ),
+    #ffffff;
+}
+
+.hero__top-wrap {
+  width: 846px;
+  padding-left: 102px;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 56px;
+
+  & strong {
+    font-weight: 700;
+  }
+}
+.hero__bottom-wrap {
+  display: flex;
+  align-items: center;
+  padding-left: 102px;
+}
+
+.hero__btn {
+  min-width: 285px;
+  height: 80px;
+  padding: 24px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  background-color: $main-color;
+  margin-right: 64px;
+}
+.hero__img-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 24px;
+}
+.hero__img-item {
+  width: 115.21px;
+  height: 105px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 7.19735px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__img-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  & span {
+    font-weight: 700;
+  }
+}

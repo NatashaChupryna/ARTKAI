@@ -1,0 +1,73 @@
+.coinloan {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.coinloan-container {
+  border-radius: 20px;
+  padding-top: 83px;
+  padding-bottom: 83px;
+  text-align: left;
+  background-size: cover;
+  background-image: url(../images/coinloan/bg@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/coinloan/bg@2x.jpg);
+  }
+}
+
+.coinloan__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #fafafa;
+  margin-bottom: 24px;
+  width: 592px;
+}
+.coinloan__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fafafa;
+  margin-bottom: 48px;
+  width: 592px;
+}
+.coinloan__btn-list {
+  width: 411px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.coinloan__list-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 12px 16px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(150px);
+  border-radius: 8px;
+  border: none;
+}
+.coinloan__btn {
+  background: #fafafa;
+  border-radius: 12px;
+  border: none;
+  padding: 26px 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.visually-hidden {
+  background: transparent;
+  border: none;
+  color: transparent;
+  cursor: inherit;
+}
