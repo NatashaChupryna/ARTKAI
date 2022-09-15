@@ -260,25 +260,19 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 48px;
   margin-bottom: 80px;
 }
 
 .whoWeAre__list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 152px;
-  padding-right: 48px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
   border-right: 4px solid #07142D;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 .whoWeAre__list-item:last-child {
-  border-right: none;
-  padding-right: 0;
+  border: none;
 }
 
 .list-item__title {

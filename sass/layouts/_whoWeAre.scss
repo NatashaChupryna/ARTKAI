@@ -51,20 +51,31 @@
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 48px;
+  // gap: 48px;
   margin-bottom: 80px;
 }
-.whoWeAre__list-item {
-  display: flex;
-  flex-direction: column;
+// .whoWeAre__list-item {
+//   display: flex;
+//   flex-direction: column;
+//   height: 152px;
+//   padding-right: 48px;
+//   border-right: 4px solid $main-color;
+//   &:last-child {
+//     border-right: none;
+//     padding-right: 0;
+//   }
+// }
+
+.whoWeAre__list-item{
   height: 152px;
-  padding-right: 48px;
-  border-right: 4px solid $main-color;
-  &:last-child {
-    border-right: none;
-    padding-right: 0;
+    flex-basis: 33%;
+    border-right: 4px solid $main-color;
+    padding-left: 48px;
+    padding-right: 48px;
+    &:last-child{
+      border: none;
+    }
   }
-}
 
 .list-item__title {
   font-weight: 600;
