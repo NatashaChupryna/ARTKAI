@@ -1,5 +1,5 @@
-.kmc{
-  background-color: #FAFAFA;
+.kmc {
+  background-color: #fafafa;
 }
 .kmc-container {
   display: flex;
@@ -38,6 +38,8 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.5;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
   &:last-child {
     margin-right: 0;
   }
@@ -75,6 +77,6 @@
 .link {
   padding: 12px 16px;
 }
-.kmc__img{
+.kmc__img {
   border-radius: 0 16px 16px 0;
 }

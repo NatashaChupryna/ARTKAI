@@ -1,6 +1,7 @@
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  position: fixed;
 }
 
 .header-container {
@@ -36,9 +37,11 @@
 .nav__link {
   padding-top: 16px;
   padding-bottom: 16px;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 .nav__link:hover, .nav__link:focus {
-  color: #07142D;
+  color: #07142d;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -46,13 +49,14 @@
 .header__btn {
   padding: 17px 40px;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   border-radius: 8px;
-  background-color: #07142D;
+  background-color: #07142d;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .hero {
@@ -97,8 +101,9 @@
   color: #ffffff;
   border-radius: 8px;
   border: none;
-  background-color: #07142D;
+  background-color: #07142d;
   margin-right: 64px;
+  cursor: pointer;
 }
 
 .hero__img-list {
@@ -267,7 +272,7 @@
   height: 152px;
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
-  border-right: 4px solid #07142D;
+  border-right: 4px solid #07142d;
   padding-left: 48px;
   padding-right: 48px;
 }
@@ -283,6 +288,7 @@
 }
 
 .list-item__text {
+  width: 350px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -302,7 +308,8 @@
   color: #ffffff;
   border-radius: 8px;
   border: none;
-  background-color: #07142D;
+  background-color: #07142d;
+  cursor: pointer;
 }
 
 .works {
@@ -334,11 +341,12 @@
   color: #ffffff;
   border-radius: 8px;
   border: none;
-  background-color: #07142D;
+  background-color: #07142d;
+  cursor: pointer;
 }
 
 .kmc {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .kmc-container {
@@ -397,12 +405,15 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.5;
+  cursor: pointer;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 .pagination__item:last-child {
   margin-right: 0;
 }
 .pagination__item:hover, .pagination__item:focus {
-  background-color: #07142D;
+  background-color: #07142d;
   color: #ffffff;
 }
 
@@ -498,6 +509,10 @@
   margin-bottom: 48px;
 }
 
+.coinloan__btn-list-item {
+  margin-bottom: 22px;
+}
+
 .coinloan__list-btn {
   font-weight: 600;
   font-size: 14px;
@@ -509,9 +524,11 @@
           backdrop-filter: blur(150px);
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .coinloan__btn {
+  width: 288px;
   background: #fafafa;
   border-radius: 12px;
   border: none;
@@ -526,6 +543,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -537,7 +555,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  color: #07142D;
+  color: #07142d;
 }
 
 .container {

@@ -41,6 +41,9 @@
   gap: 8px;
   margin-bottom: 48px;
 }
+.coinloan__btn-list-item {
+  margin-bottom: 22px;
+}
 
 .coinloan__list-btn {
   font-weight: 600;
@@ -52,8 +55,10 @@
   backdrop-filter: blur(150px);
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 .coinloan__btn {
+  width: 288px;
   background: #fafafa;
   border-radius: 12px;
   border: none;
@@ -64,6 +69,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 .visually-hidden {
   background: transparent;
