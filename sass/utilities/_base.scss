@@ -5,10 +5,16 @@ body {
 
 .container {
   width: 320px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width:768px){
+    width: 480px;
+    padding-right: 15px;
+  padding-left: 15px;
+  }
   @media screen and (min-width:768px) {
     width: 768px;
   padding-right: 30px;
@@ -55,13 +61,23 @@ button {
 .uppertitle {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   margin-bottom: 16px;
+    @media screen and (min-width:768px){
+    font-size: 14px;
+   }
+   
 }
 .title {
   font-weight: 900;
-  font-size: 64px;
+  font-size: 40px;
   line-height: 1.19;
   margin-bottom: 24px;
+   @media screen and (min-width:768px){
+    font-size: 40px;
+   }
+    @media screen and (min-width:1200px){
+    font-size: 64px;
+   }
 }

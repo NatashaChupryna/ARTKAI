@@ -4,9 +4,9 @@
 }
 .coinloan-container {
   border-radius: 20px;
-  padding-top: 83px;
-  padding-bottom: 83px;
-  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
   background-size: cover;
   background-image: url(../images/coinloan/bg@1x.jpg);
   @media (min-device-pixel-ratio: 2),
@@ -15,23 +15,36 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/coinloan/bg@2x.jpg);
   }
+  @media screen and (min-width:768px){
+      text-align: left;
+        padding-top: 83px;
+  padding-bottom: 83px;
+  }
 }
 
 .coinloan__title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 34px;
   line-height: 1.2;
   color: #fafafa;
   margin-bottom: 24px;
-  width: 592px;
+ 
+  @media screen and (min-width:768px){
+    font-size: 40px;
+     width: 592px;
+  }
 }
 .coinloan__text {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: #fafafa;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
+  @media screen and (min-width:768px){
+     margin-bottom: 48px;
   width: 592px;
+    font-size: 18px;
+  }
 }
 .coinloan__btn-list {
   width: 411px;
@@ -39,7 +52,13 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
+   @media screen and (min-width:768px){
+      margin-bottom: 48px;
+   }
+     @media screen and (min-width:320px) and (max-width:767px){
+    display: none;
+   }
 }
 .coinloan__btn-list-item {
   margin-bottom: 22px;
@@ -69,22 +88,50 @@
   }
 }
 .coinloan__btn {
-  width: 288px;
   background: #fafafa;
   border-radius: 12px;
   border: none;
-  padding: 26px 40px;
+  padding: 15px;
+  padding-right: 42px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   cursor: pointer;
+  transition: 250ms ease-in-out;
+  transform: scale(1);
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05),
+      0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1),
+      8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+  }
+    @media screen and (min-width:768px){
+padding: 24px 50px;
+font-size: 18px;
+ min-width: 288px;
+  margin-bottom: 0;
+  }
+   @media screen and (min-width:320px) and (max-width:767px){
+    position: relative;
+   }
 }
 .visually-hidden {
   background: transparent;
   border: none;
   color: transparent;
   cursor: inherit;
+}
+.btn_icon{
+      
+  margin-left: 8px;
+
+    @media screen and (min-width:320px) and (max-width:767px){
+    position: absolute;
+    right: 15px;
+   }
 }

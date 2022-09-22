@@ -1,19 +1,33 @@
 .kmc {
   background-color: #fafafa;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 50px;
+  }
 }
 .kmc-container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 }
 .kms__title-wrap {
-  padding-left: 48px;
+  @media screen and (min-width: 768px) {
+    padding-left: 48px;
+  }
 }
 .kmc__title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 1.5;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
 }
 .pagination {
   display: flex;
@@ -51,43 +65,63 @@
 }
 .kmc__text_title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 4px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 .kmc__text {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 83px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 83px;
+  }
 }
 .link__list {
   display: flex;
   align-items: center;
   gap: 6px;
+  margin-bottom: 40px;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
 }
 .link__item {
   background: rgba(7, 20, 45, 0.05);
-  padding: 12px 16px;
+  padding: 10px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   border-radius: 12px;
   transition: 250ms ease-in-out;
   &:hover,
   &:focus {
     background: rgba(7, 20, 45, 0.15);
-     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
-               0 1px  6px  rgba(0, 0, 0, .05),
-               0 8px  8px  rgba(0, 0, 0, .1), 
-               0 16px 16px rgba(0, 0, 0, .1), 
-               8px 32px 32px rgba(0, 0, 0, .15), 
-               8px 64px 64px rgba(0, 0, 0, .15); 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05),
+      0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1),
+      8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 12px 16px;
+    font-size: 14px;
   }
 }
 .link {
-  padding: 12px 16px;
+  @media screen and (min-width: 768px) {
+    padding: 12px 16px;
+  }
 }
 .kmc__img {
-  border-radius: 0 16px 16px 0;
+  width: 320px;
+  border-radius: 8px;
+  @media screen and (min-width: 768px) {
+    border-radius: 0 16px 16px 0;
+  }
 }
