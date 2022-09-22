@@ -24,7 +24,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 32px;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    gap: 32px;
+  }
 }
 
 .nav__item {
@@ -47,7 +57,8 @@
 }
 
 .header__btn {
-  padding: 17px 40px;
+  padding: 10px 20px;
+  min-width: 130px;
   border: none;
   color: #ffffff;
   font-weight: 700;
@@ -57,6 +68,21 @@
   background-color: #07142d;
   margin-left: auto;
   cursor: pointer;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.header__btn:hover, .header__btn:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+@media screen and (min-width: 1200px) {
+  .header__btn {
+    padding: 17px 40px;
+  }
 }
 
 .hero {
@@ -104,6 +130,16 @@
   background-color: #07142d;
   margin-right: 64px;
   cursor: pointer;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.hero__btn:hover, .hero__btn:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .hero__img-list {
@@ -310,6 +346,16 @@
   border: none;
   background-color: #07142d;
   cursor: pointer;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.whoWeAre__btn:hover, .whoWeAre__btn:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .works {
@@ -448,6 +494,13 @@
   font-size: 14px;
   line-height: 1.5;
   border-radius: 12px;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+.link__item:hover, .link__item:focus {
+  background: rgba(7, 20, 45, 0.15);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
 }
 
 .link {
@@ -525,6 +578,12 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+.coinloan__list-btn:hover, .coinloan__list-btn:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
 }
 
 .coinloan__btn {
@@ -559,11 +618,25 @@ body {
 }
 
 .container {
-  width: 1440px;
-  padding-right: 80px;
-  padding-left: 80px;
+  width: 320px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1440px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
 }
 
 h1,

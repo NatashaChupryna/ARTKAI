@@ -14,7 +14,14 @@ $main-color: #07142d;
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 15px;
+
+    @media screen and (min-width:768px) {
+  gap: 20px;
+  }
+  @media screen and (min-width:1200px) {
+     gap: 32px;
+  }
 }
 .nav__item {
   font-weight: 600;
@@ -33,7 +40,9 @@ $main-color: #07142d;
   }
 }
 .header__btn {
-  padding: 17px 40px;
+        padding: 10px 20px;
+    min-width: 130px;
+
   border: none;
   color: #ffffff;
   font-weight: 700;
@@ -43,4 +52,21 @@ $main-color: #07142d;
   background-color: $main-color;
   margin-left: auto;
   cursor: pointer;
+    transition: 250ms ease-in-out;
+  transform: scale(1);
+  
+   &:hover,
+  &:focus {
+     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+               0 1px  6px  rgba(0, 0, 0, .05),
+               0 8px  8px  rgba(0, 0, 0, .1), 
+               0 16px 16px rgba(0, 0, 0, .1), 
+               8px 32px 32px rgba(0, 0, 0, .15), 
+               8px 64px 64px rgba(0, 0, 0, .15); 
+               transform: scale(1.02);
+  }
+
+  @media screen and (min-width:1200px){
+      padding: 17px 40px;
+  }
 }
