@@ -1,5 +1,6 @@
 $main-color: #07142d;
 .header {
+  width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
   position: fixed;
@@ -81,7 +82,7 @@ $main-color: #07142d;
     display: flex;
     justify-content: center;
   }
-  
+
   @media screen and (min-width: 1200px) {
     padding: 17px 40px;
   }

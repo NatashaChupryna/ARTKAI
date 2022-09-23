@@ -1,4 +1,5 @@
 .header {
+  width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
   position: fixed;
@@ -382,6 +383,13 @@
 .benefits__img {
   width: 300px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .benefits__img {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .benefits__img {
@@ -969,6 +977,7 @@
 }
 @media screen and (min-width: 480px) {
   .kmc__img {
+    width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1200,7 +1209,7 @@
   border: none;
   margin-left: auto;
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 767px) {
   .mobile-menu__btn--open {
     display: none;
   }
