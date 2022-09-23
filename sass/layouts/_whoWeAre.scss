@@ -5,9 +5,9 @@
   @media screen and (min-width: 768px) {
     padding-top: 100px;
   }
-    @media screen and (min-width: 1200px){
-       padding-top: 128px; 
-    }
+  @media screen and (min-width: 1200px) {
+    padding-top: 128px;
+  }
 }
 .whoWeAre-container {
   text-align: center;
@@ -64,17 +64,31 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-.item-img{
-   @media screen and (min-width: 768px) and (max-width: 1200px){
+  @media screen and (min-width: 768px){
     width: 120px;
-   }
+  }
+}
+.item-img {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 110px;
+    
+  }
+  @media screen and (min-width: 1200px){
+    width: 120px;
+  }
 }
 
 .item-imgg {
-  @media screen and (min-width: 1200px) {
-    margin-top: -24px;
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 110px;
+       margin-top: -24px;
   }
+    @media screen and (min-width: 1200px) {
+    margin-top: -24px;
+    width: 120px;
+  }
+
 }
 
 .item-title {
@@ -82,15 +96,14 @@
   font-size: 14px;
   line-height: 1.5;
   margin-top: 10px;
-
   text-align: center;
   @media screen and (min-width: 768px) {
-   
-    font-size: 16px;
+    font-size: 14px;
   }
-  @media screen and (min-width: 1200px){
- padding-left: 30px;
+  @media screen and (min-width: 1200px) {
+    padding-left: 30px;
     margin-top: 16px;
+    font-size: 16px;
   }
 }
 
@@ -101,20 +114,31 @@
     display: flex;
     align-items: baseline;
     justify-content: center;
-    margin-bottom: 80px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
+  
   }
+   @media screen and (min-width: 1200px){
+    margin-bottom: 80px;
+   }
+
 }
 
 .whoWeAre__list-item {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 4px solid $main-color;
+  border-bottom: 2px solid $main-color;
   &:last-child {
     border: none;
+      padding-right: 0;
   }
-
   @media screen and (min-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: none;
+    border-right: 2px solid $main-color;
+        height: 200px;
+  }
+  @media screen and (min-width: 1200px) {
     height: 152px;
     padding-top: 0;
     padding-bottom: 0;
@@ -128,10 +152,15 @@
 
 .list-item__title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   text-align: left;
-  @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+
+       @media screen and (min-width: 768px){
+          font-size: 16px;
+       }
+  @media screen and (min-width: 1200px) {
     font-size: 24px;
   }
 }
@@ -145,7 +174,7 @@
   & span {
     font-weight: 700;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     width: 350px;
   }
@@ -171,7 +200,12 @@
       8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
     transform: scale(1.02);
   }
+
   @media screen and (min-width: 768px) {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
     min-width: 285px;
     height: 80px;
     padding: 24px 50px;

@@ -79,11 +79,14 @@
       #ff6136 56.15%
     ),
     #ffffff;
-
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
+    padding-top: 150px
+}
+  @media screen and (min-width: 1200px) {
     padding-top: 207px;
     padding-bottom: 147px;
   }
+  
 }
 
 .hero__top-wrap {
@@ -93,9 +96,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 846px;
-    padding-left: 50px;
      margin-bottom: 30px;
+     padding-left: 50px;
   }
    @media screen and (min-width: 1200px) {
      width: 846px;
@@ -114,9 +116,7 @@
   & strong {
     font-weight: 700;
   }
-  @media screen and (min-width: 768px) {
-    font-size: 20px;
-  }
+ 
   @media screen and (min-width: 1200px){
     font-size: 24px;
 
@@ -131,11 +131,12 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     gap: 0;
-    padding-left: 102px;
+  
     flex-wrap: wrap;
   }
    @media screen and (min-width: 1200px){
     flex-wrap: nowrap;
+      padding-left: 102px;
    }
 }
 
@@ -163,7 +164,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 15px 30px;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 30px;
     margin-bottom: 0;
   }
@@ -172,6 +173,7 @@
   padding: 24px 50px;
     min-width: 285px;
     height: 80px;
+     font-size: 20px;
     }
 }
 .hero__img-list {
@@ -199,4 +201,8 @@
   & span {
     font-weight: 700;
   }
+   @media screen and (min-width: 768px) and (max-width: 1199px){
+    margin-top: 20px;
+   }
+
 }

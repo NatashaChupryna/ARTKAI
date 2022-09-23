@@ -15,10 +15,12 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/coinloan/bg@2x.jpg);
   }
-  @media screen and (min-width:768px){
-      text-align: left;
-        padding-top: 83px;
-  padding-bottom: 83px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    padding-top: 83px;
+    padding-bottom: 83px;
+   background-position: 50%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -28,10 +30,15 @@
   line-height: 1.2;
   color: #fafafa;
   margin-bottom: 24px;
- 
-  @media screen and (min-width:768px){
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 40px;
-     width: 592px;
+    width: 592px;
   }
 }
 .coinloan__text {
@@ -40,9 +47,13 @@
   line-height: 1.5;
   color: #fafafa;
   margin-bottom: 30px;
-  @media screen and (min-width:768px){
-     margin-bottom: 48px;
-  width: 592px;
+  @media screen and (min-width: 768px) {
+width: 460px;
+margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 48px;
+    width: 592px;
     font-size: 18px;
   }
 }
@@ -53,12 +64,12 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 30px;
-   @media screen and (min-width:768px){
-      margin-bottom: 48px;
-   }
-     @media screen and (min-width:320px) and (max-width:767px){
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: none;
-   }
+  }
 }
 .coinloan__btn-list-item {
   margin-bottom: 22px;
@@ -66,7 +77,7 @@
 
 .coinloan__list-btn {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
   padding: 12px 16px;
   color: #ffffff;
@@ -78,13 +89,13 @@
   transition: 250ms ease-in-out;
   &:hover,
   &:focus {
-     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
-               0 1px  6px  rgba(0, 0, 0, .05),
-               0 8px  8px  rgba(0, 0, 0, .1), 
-               0 16px 16px rgba(0, 0, 0, .1), 
-               8px 32px 32px rgba(0, 0, 0, .15), 
-               8px 64px 64px rgba(0, 0, 0, .15); 
-               
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05),
+      0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1),
+      8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 768px){
+     font-size: 12px;
   }
 }
 .coinloan__btn {
@@ -110,15 +121,19 @@
       8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
     transform: scale(1.02);
   }
-    @media screen and (min-width:768px){
-padding: 24px 50px;
-font-size: 18px;
- min-width: 288px;
-  margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    padding: 15px 30px;
+    padding-right: 42px;
+    font-size: 18px;
+    margin-bottom: 0;
   }
-   @media screen and (min-width:320px) and (max-width:767px){
+  @media screen and (min-width: 1200px) {
+    padding: 24px 50px;
+    min-width: 288px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     position: relative;
-   }
+  }
 }
 .visually-hidden {
   background: transparent;
@@ -126,12 +141,10 @@ font-size: 18px;
   color: transparent;
   cursor: inherit;
 }
-.btn_icon{
-      
+.btn_icon {
   margin-left: 8px;
-
-    @media screen and (min-width:320px) and (max-width:767px){
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     position: absolute;
-    right: 15px;
-   }
+    right: 14px;
+  }
 }

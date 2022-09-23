@@ -17,8 +17,8 @@ body {
   }
   @media screen and (min-width:768px) {
     width: 768px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 35px;
+  padding-left: 35px;
 
   }
   @media screen and (min-width:1200px) {
@@ -66,8 +66,11 @@ button {
   margin-bottom: 16px;
     @media screen and (min-width:768px){
     font-size: 14px;
+    margin-bottom: 10px;
    }
-   
+   @media screen and (min-width:1200px){
+      margin-bottom: 16px;
+   }
 }
 .title {
   font-weight: 900;
