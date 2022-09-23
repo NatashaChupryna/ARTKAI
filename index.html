@@ -36,25 +36,31 @@
 
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href=""  class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#service"  class="nav__link">Services</a></li>
             <li class="nav__item">
-              <a href="" name="navigation" class="nav__link">Solid Teams</a>
+              <a href="#teams" name="navigation" class="nav__link">Solid Teams</a>
             </li>
             <li class="nav__item">
               <a href="" name="navigation" class="nav__link">Processes</a>
             </li>
-            <li class="nav__item"><a href="" name="navigation" class="nav__link">Works</a></li>
-            <li class="nav__item"><a href="" name="navigation" class="nav__link">About Us</a></li>
+            <li class="nav__item"><a href="#works" name="navigation" class="nav__link">Works</a></li>
+            <li class="nav__item"><a href="#about" name="navigation" class="nav__link">About Us</a></li>
             <li class="nav__item"><a href="" name="navigation" class="nav__link">Blog</a></li>
           </ul>
         </nav>
         <a class="header__btn" name="header-button">Contact Us</a>
+      
+      <a class="mobile-menu__btn--open" data-menu-open>
+            <svg class="mobile-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </a>
       </div>
     </header>
 
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero" id="service">
         <div class="container hero-container">
           <div class="hero__top-wrap">
             <p class="uppertitle">our service solution</p>
@@ -118,7 +124,7 @@
       </section>
 
       <!-- Benefits -->
-      <section class="benefits">
+      <section class="benefits" id="about">
         <div class="container benefits-container">
           <img
             class="benefits__img"
@@ -149,7 +155,7 @@
       </section>
 
       <!-- Who We Are -->
-      <section class="whoWeAre">
+      <section class="whoWeAre" id="teams">
         <div class="container whoWeAre-container">
           <div class="whoWeAre__title-wrap">
             <p class="uppertitle">WHO WE ARE</p>
@@ -260,7 +266,7 @@ shield"
       </section>
 
       <!-- Our Works -->
-      <section class="works">
+      <section class="works" id="works">
         <div class="container works-container">
           <p class="uppertitle">our works</p>
           <h2 class="title">Projects that make sense</h2>
@@ -279,7 +285,7 @@ shield"
         <div class="container kmc-container">
           <div class="kms__title-wrap">
             <h3 class="kmc__title">
-              KMC Commander — Intuitive Instrument for IOT Management
+              KMC Commander —&nbsp;&nbsp; Intuitive Instrument for IOT Management
             </h3>
             <ul class="pagination">
               <p class="pagination__title">Explore the case:</p>
@@ -371,6 +377,30 @@ shield"
           </a>
         </div>
       </section>
+
+       <div class="menu-overlay" data-menu>
+      <div class="mobile-menu">
+        <button class="mobile-menu__btn--close" data-menu-close>
+          <svg class="mobile-menu__icon--close" width="15" height="15">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+         <nav>
+          <ul class="mobile__nav__list">
+            <li class="mobile__nav__item"><a href="#service"  class="mobile__nav__link">Services</a></li>
+            <li class="mobile__nav__item"> <a href="#teams" name="navigation" class="mobile__nav__link">Solid Teams</a> </li>
+            <li class="mobile__nav__item"> <a href="" name="navigation" class="mobile__nav__link">Processes</a></li>
+            <li class="mobile__nav__item"><a href="#works" name="navigation" class="mobile__nav__link">Works</a></li>
+            <li class="mobile__nav__item"> <a href="#about" name="navigation" class="mobile__nav__link">About Us</a></li>
+            <li class="mobile__nav__item"> <a href="" name="navigation" class="mobile__nav__link">Blog</a></li>
+</ul>
+<a class="mobile__btn" name="header-button">Contact Us</a>
+          </div>
+</div>
+
+
     </main>
+
+    <script src="./mobileMenu.js"></script>
   </body>
 </html>

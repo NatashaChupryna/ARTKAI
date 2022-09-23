@@ -85,7 +85,9 @@
        margin-top: -24px;
   }
     @media screen and (min-width: 1200px) {
-    margin-top: -24px;
+      &:last-child{
+         margin-top: -24px;
+      }
     width: 120px;
   }
 
@@ -170,7 +172,6 @@
   font-size: 14px;
   line-height: 1.5;
   text-align: left;
-
   & span {
     font-weight: 700;
   }

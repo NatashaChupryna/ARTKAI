@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 80px;
   background-size: cover;
   background: linear-gradient(
@@ -106,7 +106,8 @@
    }
 }
 .hero__title{
-  padding-right: 50px;
+   @media screen and (min-width: 768px){ padding-right: 50px;}
+  
 }
 .hero__text {
   font-weight: 400;
@@ -137,6 +138,7 @@
    @media screen and (min-width: 1200px){
     flex-wrap: nowrap;
       padding-left: 102px;
+      justify-content: flex-start;
    }
 }
 
